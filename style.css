@@ -4,40 +4,73 @@
   box-sizing: border-box;
 }
 
-/* Definições gerais*/
+
+/* =========================================
+   ESTILOS GERAIS DO SITE (body)
+   Afeta toda a página
+   ========================================= */
 body {
+  /* 🎨 NÍVEL 2 | Troque pela fonte que você escolher
+     Exemplo: 'Georgia', 'Verdana', 'Courier New'
+     Ou use uma fonte do Google Fonts! */
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+
+  /* 🎨 NÍVEL 2 | Cor de fundo da página inteira */
+  background-color: #ffffff;
+
+  /* 🎨 NÍVEL 2 | Cor padrão do texto */
+  color: #333333;
+
   line-height: 1.6;
 }
 
-/* Cabeçalho */
+
+/* =========================================
+   CABEÇALHO (header)
+   A barra no topo do site
+   ========================================= */
 header {
-  background-color: #c7b5f0; 
+  /* 🎨 NÍVEL 2 | Cor de fundo do cabeçalho */
+  background-color: #cccccc;
+
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Tamanho da logo no cabeçalho */
 header img {
   width: 130px;
+  /* 🎨 NÍVEL 2 | Aumente ou diminua o tamanho da logo (em pixels) */
 }
 
+
+/* =========================================
+   MENU DE NAVEGAÇÃO
+   Os links no canto do cabeçalho
+   ========================================= */
 .menu a {
-  color: #000000;
+  /* 🎨 NÍVEL 2 | Cor dos links do menu */
+  color: #333333;
+
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   margin-right: 40px;
 }
 
+/* Efeito ao passar o mouse em cima do link */
 .menu a:hover {
+  /* 🎨 NÍVEL 2 | Você pode trocar por 'color: vermelho' ou outro efeito! */
   text-decoration: underline;
 }
 
-/* Apresentação */
+
+/* =========================================
+   SEÇÃO PRINCIPAL (main)
+   O conteúdo central da página
+   ========================================= */
 .secoes {
   display: flex;
   justify-content: space-between;
@@ -50,18 +83,40 @@ header img {
   flex: 1;
 }
 
-.titulo, .redes-subtitulo {
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   ========================================= */
+.titulo {
   margin-bottom: 20px;
-  color: #6a1b9a;
+
+  /* 🎨 NÍVEL 2 | Cor do título principal */
+  color: #333333;
+
+  /* 🎨 NÍVEL 2 | Tamanho do título */
   font-size: 26px;
 }
 
+
+/* =========================================
+   TEXTO DE DESCRIÇÃO
+   ========================================= */
 .descricao {
+  /* 🎨 NÍVEL 2 | Tamanho do texto da descrição */
   font-size: 18px;
   margin-bottom: 40px;
 }
 
+
+/* =========================================
+   REDES SOCIAIS
+   ========================================= */
 .redes-subtitulo {
+  margin-bottom: 20px;
+
+  /* 🎨 NÍVEL 2 | Cor do subtítulo das redes sociais */
+  color: #555555;
+
   font-size: 20px;
 }
 
@@ -70,25 +125,87 @@ header img {
   font-size: 18px;
   font-weight: bold;
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
-  color: #c96372;
+
+  /* 🎨 NÍVEL 2 | Cor do link da rede social */
+  color: #333333;
 }
 
+/* Tamanho do ícone da rede social */
 .redes-icon {
   width: 50px;
 }
 
+
+/* =========================================
+   IMAGEM PRINCIPAL
+   ========================================= */
 .imagem img {
+  /* 🎨 NÍVEL 2 | Aumente ou diminua o tamanho da imagem */
   width: 450px;
-  transition: opacity 0.3s ease-in-out; /* apenas para o segundo desafio */
+
+  /* Essa linha deixa a troca de imagem suave (efeito de transição) */
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Rodapé */
+
+/* =========================================
+   BOTÃO INTERATIVO
+   🎯 Este é o botão que o JavaScript vai usar!
+   ========================================= */
+.botao-surpresa {
+  /* 🎨 NÍVEL 2 | Cor de fundo do botão */
+  background-color: #cccccc;
+
+  /* 🎨 NÍVEL 2 | Cor do texto do botão */
+  color: #333333;
+
+  /* 🎨 NÍVEL 2 | Tamanho do texto do botão */
+  font-size: 16px;
+
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: 2px solid #333333;
+  border-radius: 6px;
+
+  /* Muda o cursor para "mãozinha" ao passar em cima */
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse em cima do botão */
+.botao-surpresa:hover {
+  /* 🎨 NÍVEL 2 | Cor de fundo do botão ao passar o mouse */
+  background-color: #aaaaaa;
+}
+
+
+/* =========================================
+   MENSAGEM SURPRESA
+   Aparece quando o botão é clicado
+   ========================================= */
+.mensagem-surpresa {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: bold;
+
+  /* 🎨 NÍVEL 2 | Cor da mensagem surpresa */
+  color: #333333;
+}
+
+
+/* =========================================
+   RODAPÉ (footer)
+   A barra no final do site
+   ========================================= */
 footer {
+  /* 🎨 NÍVEL 2 | Cor de fundo do rodapé */
   background-color: #eeeeee;
+
   text-align: center;
   padding: 15px;
   font-size: 14px;
-  color: #555;
+
+  /* 🎨 NÍVEL 2 | Cor do texto do rodapé */
+  color: #555555;
 }

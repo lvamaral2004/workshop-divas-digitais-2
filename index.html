@@ -2,43 +2,108 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divas Digitais</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✏️ NÍVEL 1 | Altere o título da aba do navegador abaixo -->
+  <title>Meu Site</title>
+
+  <!-- Conecta este arquivo com o arquivo de estilos (style.css) -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="logo.png" alt="logo">
-        <nav class="menu">
-            <a class="menu-item" href="index.html">Home</a>
-            <a class="menu-item" href="sobre_mim.html">Sobre mim</a>
-        </nav>
-    </header>
-    <main class="secoes">
-        <div class="texto">
-            <h1 class="titulo">Sejam bem-vindas a página do Divas Digitais!
-            </h1>
-            <p class="descricao">Olá! Somos as integrantes do projeto Divas Digitais e é um prazer ter você conosco.
-            </p>
 
-            <div class="redes-sociais">
-                <h2 class="redes-subtitulo">Acesse nosso instagram: </h2>
-                <a class="redes-link" href="https://www.instagram.com/divassdigitais/" target="_blank">
-                    <img class="redes-icon" src="icon-instagram.png">
-                    Instagram</a>
-            </div>
-        </div>
+  <!-- ============================
+       CABEÇALHO (HEADER)
+       Aparece no topo de todas as páginas
+  ============================= -->
+  <header>
 
-        <div class="imagem">
-            <img src="imagem1.png" alt="imagem">
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Divas Digitais. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+    <!-- ✏️ NÍVEL 1 | Troque "logo.png" pelo nome do arquivo da sua logo -->
+    <img src="logo.png" alt="logo do site">
+
+    <!-- Menu de navegação: os links levam para outras páginas -->
+    <nav class="menu">
+      <!-- ✏️ NÍVEL 1 | Altere o texto dos links do menu se quiser -->
+      <a class="menu-item" href="index.html">Home</a>
+      <a class="menu-item" href="sobre_mim.html">Sobre mim</a>
+    </nav>
+
+  </header>
+
+
+  <!-- ============================
+       CONTEÚDO PRINCIPAL (MAIN)
+       O que aparece no centro da página
+  ============================= -->
+  <main class="secoes">
+
+    <!-- Coluna de texto (lado esquerdo) -->
+    <div class="texto">
+
+      <!-- ✏️ NÍVEL 1 | Altere o título principal aqui -->
+      <h1 class="titulo">Escreva seu título aqui</h1>
+
+      <!-- ✏️ NÍVEL 1 | Altere a descrição/apresentação aqui -->
+      <p class="descricao">
+        Escreva uma apresentação sobre você ou seu projeto aqui.
+        Pode ser um texto curto, contando quem você é e o que faz!
+      </p>
+
+      <!-- Seção de redes sociais -->
+      <div class="redes-sociais">
+
+        <!-- ✏️ NÍVEL 1 | Altere o texto do subtítulo das redes sociais -->
+        <h2 class="redes-subtitulo">Acesse minhas redes sociais:</h2>
+
+        <!-- ✏️ NÍVEL 1 | Troque o link do href pelo seu perfil real -->
+        <a class="redes-link" href="https://www.instagram.com/" target="_blank">
+          <!-- ✏️ NÍVEL 1 | Troque "icon-instagram.png" pelo ícone que quiser usar -->
+          <img class="redes-icon" src="icon-instagram.png" alt="ícone instagram">
+          Instagram
+        </a>
+
+      </div>
+
+      <!-- 🎯 NÍVEL 3 | Este é o botão interativo — o JavaScript vai fazer ele funcionar! -->
+      <!-- ✏️ NÍVEL 1 | Altere o texto do botão se quiser -->
+      <button class="botao-surpresa" onclick="mostrarMensagem()">
+        Clique aqui para uma surpresa!
+      </button>
+
+      <!-- Caixa onde a mensagem vai aparecer ao clicar no botão -->
+      <!-- Ela começa escondida (style="display:none") -->
+      <p class="mensagem-surpresa" id="mensagem" style="display:none;">
+        <!-- ✏️ NÍVEL 1 | Altere o texto da mensagem surpresa -->
+        🎉 Parabéns! Você acabou de usar JavaScript!
+      </p>
+
+    </div>
+
+
+    <!-- Coluna de imagem (lado direito) -->
+    <div class="imagem">
+      <!-- ✏️ NÍVEL 1 | Troque "imagem1.png" pela sua imagem principal -->
+      <!-- ✏️ NÍVEL 1 | Troque "imagem2.png" pela imagem que aparece ao passar o mouse -->
+      <img src="imagem1.png" alt="imagem principal">
+    </div>
+
+  </main>
+
+
+  <!-- ============================
+       RODAPÉ (FOOTER)
+       Aparece na parte de baixo da página
+  ============================= -->
+  <footer>
+    <!-- ✏️ NÍVEL 1 | Altere o texto do rodapé -->
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <!-- Conecta este arquivo com o JavaScript (script.js) -->
+  <script src="script.js"></script>
+
 </body>
-
 </html>
